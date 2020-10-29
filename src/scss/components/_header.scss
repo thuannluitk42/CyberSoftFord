@@ -1,0 +1,29 @@
+/* Header */
+
+header {
+  .row-left {
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &__title {
+      text-transform: uppercase;
+    }
+    svg {
+      width: 100%;
+    }
+  }
+  .row-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    border: 1px solid red;
+    svg {
+      width: 15%;
+    }
+    &__title {
+      text-transform: capitalize;
+    }
+  }
+}
