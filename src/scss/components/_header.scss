@@ -1,6 +1,8 @@
 /* Header */
 
 header {
+  background-color: $bg-primary;
+  font-size: 12px;
   .row {
     align-items: center;
     .row-left {
@@ -13,8 +15,8 @@ header {
           text-transform: uppercase;
         }
         svg {
-          width: 15%;
-          background-color: yellow;
+          width: 60px;
+          height: 60px;
           .cls-1 {
             fill: none;
           }
@@ -34,15 +36,27 @@ header {
       }
     }
     .row-right {
-      border: 1px solid red;
       a {
         display: flex;
         align-items: center;
-        border: 1px solid blue;
-        // img {
-        // }
+        justify-content: center;
+        transform: scale(1.2);
+        svg {
+          width: 30px;
+          height: 30px;
+          transform: initial;
+        }
         .row-right__title {
+          color: $color-primary;
           text-transform: capitalize;
+        }
+        &:hover {
+          text-decoration: none;
+          svg {
+            .cls-3 {
+              fill: $color-primary;
+            }
+          }
         }
       }
     }

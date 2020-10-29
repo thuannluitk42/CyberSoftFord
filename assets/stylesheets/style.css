@@ -447,6 +447,10 @@ textarea {
 }
 
 /* Header */
+header {
+  background-color: #f3f3f3;
+  font-size: 12px;
+}
 header .row {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -468,8 +472,8 @@ header .row .row-left a .row-left__title {
   text-transform: uppercase;
 }
 header .row .row-left a svg {
-  width: 15%;
-  background-color: yellow;
+  width: 60px;
+  height: 60px;
 }
 header .row .row-left a svg .cls-1 {
   fill: none;
@@ -484,9 +488,6 @@ header .row .row-left a:hover {
 header .row .row-left a:hover svg .cls-2 {
   fill: #2861a4;
 }
-header .row .row-right {
-  border: 1px solid red;
-}
 header .row .row-right a {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -494,8 +495,25 @@ header .row .row-right a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid blue;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+header .row .row-right a svg {
+  width: 30px;
+  height: 30px;
+  -webkit-transform: initial;
+          transform: initial;
 }
 header .row .row-right a .row-right__title {
+  color: #2861a4;
   text-transform: capitalize;
+}
+header .row .row-right a:hover {
+  text-decoration: none;
+}
+header .row .row-right a:hover svg .cls-3 {
+  fill: #2861a4;
 }
