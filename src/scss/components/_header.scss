@@ -1,29 +1,50 @@
 /* Header */
 
 header {
-  .row-left {
-    margin-right: auto;
-    display: flex;
+  .row {
     align-items: center;
-    justify-content: flex-start;
-    &__title {
-      text-transform: uppercase;
+    .row-left {
+      margin-right: auto;
+      a {
+        color: $color-secondary;
+        display: flex;
+        align-items: center;
+        .row-left__title {
+          text-transform: uppercase;
+        }
+        svg {
+          width: 15%;
+          background-color: yellow;
+          .cls-1 {
+            fill: none;
+          }
+          .cls-2 {
+            fill: $color-secondary;
+          }
+        }
+        &:hover {
+          text-decoration: none;
+          color: $color-primary;
+          svg {
+            .cls-2 {
+              fill: $color-primary;
+            }
+          }
+        }
+      }
     }
-    svg {
-      width: 100%;
-    }
-  }
-  .row-right {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    border: 1px solid red;
-    svg {
-      width: 15%;
-    }
-    &__title {
-      text-transform: capitalize;
+    .row-right {
+      border: 1px solid red;
+      a {
+        display: flex;
+        align-items: center;
+        border: 1px solid blue;
+        // img {
+        // }
+        .row-right__title {
+          text-transform: capitalize;
+        }
+      }
     }
   }
 }
